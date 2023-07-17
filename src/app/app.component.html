@@ -1,0 +1,13 @@
+<h1>Welcome back Programmers</h1>
+<iframe [src]="url"></iframe>  
+  <iframe src=""></iframe>
+
+<h2>Parent</h2>
+<select (change)="getSelectedValue($event)" >
+  <option *ngFor="let friend of friends">{{friend.name}}</option>
+</select>
+
+<app-child [friendData]="friends" [selectedValue]="value"></app-child>
+
+<app-fetch-data></app-fetch-data>
+<app-array-method></app-array-method>n

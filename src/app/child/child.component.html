@@ -1,0 +1,9 @@
+<h2>Child</h2>
+
+<select [(ngModel)]='selectedValue'>
+  
+  <option *ngFor="let friend of friendData">{{ friend.name }}</option>
+
+</select>
+
+<h3 *ngIf="selectedValue !== 'Avis Roach'">Mudassir & Rizwan Opener Batsmen</h3>

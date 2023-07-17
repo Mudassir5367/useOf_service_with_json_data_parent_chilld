@@ -1,0 +1,21 @@
+<p>fetch-data works!</p>
+<table border="1px" width="100%" cellPadding="10px" cellspacing="0px">
+    <tr>
+        <th>Name</th>
+        <th>Company</th>
+        <th>Age</th>
+        <th>Balance</th>
+        <th>Status</th>
+        <!-- <th>Friends email</th> -->
+    </tr>
+    <tr *ngFor="let arr of post">
+        <td>{{arr.name}}</td>
+        <td>{{arr.company}}</td>
+        <td>{{arr.age}}</td>
+        <td>{{arr.balance}}</td>
+        <td>{{arr.isActive?"online":"ofline"}}</td>
+        <td><button (click)="getId(arr)">Friends</button></td>
+        <!-- <td><button (click)="friendEmail(arr)">Friends</button></td> -->
+
+    </tr>
+</table>
